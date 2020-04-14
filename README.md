@@ -1,4 +1,4 @@
-# components
+# Vue Components
 
 ## Project setup
 ```
@@ -7,6 +7,8 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
+npm start
+ó
 npm run serve
 ```
 

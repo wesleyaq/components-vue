@@ -1,0 +1,28 @@
+.link {
+  font-size: 18px;
+  color: $color-blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+    text-decoration: none;
+  }
+
+  &-sm  { font-size: 11px; }
+  &-md  { font-size: 15px; }
+  &-lg  { font-size: 18px; }
+  &-xlg { font-size: 22px; }
+
+  &.pag {
+    color: $color-primary;
+
+    &.disabled {
+      color: $color-gray;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
