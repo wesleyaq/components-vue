@@ -1,13 +1,13 @@
-@import "../../assets/scss/variables";
-@import '../../assets/scss/components/mixins/breakpoints';
+// @import "../../assets/scss/variables";
+// @import '../../assets/scss/components/mixins/breakpoints';
 
-.hd {
-  padding: 0 20px 0 15px;
-  background-color: $hd-bg;
-}
+// .hd {
+//   padding: 0 20px 0 15px;
+//   background-color: red; //$hd-bg;
+// }
 
-@include media-breakpoint-up(md) {
-  .hd {
-    text-align: left;
-  }
-}
+// @include media-breakpoint-up(md) {
+//   .hd {
+//     text-align: left;
+//   }
+// }

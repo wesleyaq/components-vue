@@ -1,6 +1,6 @@
 export default {
   site: {
-    title: 'Components'
+    title: 'Componentes'
   },
 
   api: {

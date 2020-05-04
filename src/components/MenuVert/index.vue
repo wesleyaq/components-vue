@@ -1,40 +1,43 @@
 <template>
-  <a-menu theme="dark" :defaultSelectedKeys="['sub1']" mode="inline">
-		<a-menu-item key="1">
-			<router-link :to="{name: 'home'}" class="menu-item"><a-icon type="home" /><span>Inicio</span></router-link>
-		</a-menu-item>
-    <a-sub-menu key="lay0">
-      <span slot="title"><a-icon type="layout" /><span>Layout</span></span>
-      <a-menu-item key="lay1">
-        <router-link :to="{name: 'layout.overview'}" class="menu-item">Overview</router-link>
-      </a-menu-item>
-      <a-menu-item key="lay2">
-				<router-link :to="{name: 'layout.grid'}" class="menu-item">Grid</router-link>
-			</a-menu-item>
-    </a-sub-menu>
+  <div class="text-gray-100">
+		<router-link :to="{name: 'home'}" class="block p-3 font-bold">
+      <!-- <a-icon type="home" /> --><span>Inicio</span>
+    </router-link>
 
-    <a-sub-menu key="com0">
-      <span slot="title"><a-icon type="appstore" /><span>Componentes</span></span>
-      <a-menu-item key="com1">
-				<router-link :to="{name: 'com.buttons'}" class="menu-item">Botones</router-link>
-			</a-menu-item>
-      <a-menu-item key="com2">
-				<router-link :to="{name: 'com.alerts'}" class="menu-item">Alertas</router-link>
-			</a-menu-item>
-    </a-sub-menu>
+    <div>
+      <div class="block p-3 font-bold">
+        <!-- <a-icon type="layout" /> --><span>Layout</span>
+      </div>
+      <div class="bg-gray-700">
+        <router-link :to="{name: 'layout.overview'}" class="block p-3 pl-5">Overview</router-link>
+				<router-link :to="{name: 'layout.grid'}" class="block p-3 pl-5">Grid</router-link>
+			</div>
+    </div>
 
-    <a-sub-menu key="con0">
-      <span slot="title"><a-icon type="profile" /><span>Contenido</span></span>
-      <a-menu-item key="cont1">
-				<router-link :to="{name: 'cont.typography'}" class="menu-item">Tipografía</router-link>
-			</a-menu-item>
-      <a-menu-item key="cont2">
-				<router-link :to="{name: 'cont.images'}" class="menu-item">Imagenes</router-link>
-			</a-menu-item>
-    </a-sub-menu>
+    <div>
+      <div class="block p-3 font-bold">
+        <!-- <a-icon type="appstore" /> --><span>Componentes</span>
+      </div>
+      <div class="bg-gray-700">
+				<router-link :to="{name: 'com.buttons'}" class="block p-3 pl-5">Botones</router-link>
+				<router-link :to="{name: 'com.alerts'}" class="block p-3 pl-5">Alertas</router-link>
+			</div>
+    </div>
 
-    <a-sub-menu key="uti0">
-      <span slot="title"><a-icon type="tool" /><span>Utilidades</span></span>
+    <div>
+      <div class="block p-3 font-bold">
+        <!-- <a-icon type="profile" /> --><span>Contenido</span>
+      </div>
+      <div class="bg-gray-700">
+				<router-link :to="{name: 'cont.typography'}" class="block p-3 pl-5">Tipografía</router-link>
+				<router-link :to="{name: 'cont.images'}" class="block p-3 pl-5">Imagenes</router-link>
+			</div>
+    </div>
+
+    <!-- <div class="divide-y divide-gray-600">
+      <div class="block p-3 font-bold">
+        <a-icon type="tool" /><span>Utilidades</span>
+      </div>
       <a-menu-item key="uti1">Bordes</a-menu-item>
       <a-menu-item key="uti2">Colores</a-menu-item>
       <a-menu-item key="uti3">Display</a-menu-item>
@@ -47,8 +50,8 @@
       <a-menu-item key="uti10">Textos</a-menu-item>
       <a-menu-item key="uti11">Vertical Align</a-menu-item>
       <a-menu-item key="uti12">Visibility</a-menu-item>
-    </a-sub-menu>
-  </a-menu>
+    </div> -->
+  </div>
 </template>
 
 <script>

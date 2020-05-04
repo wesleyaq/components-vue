@@ -1,6 +1,6 @@
 <template>
-  <footer class="ft text-center pt-5">
-    <span class="text fz-14 text-white">{{title}}</span>
+  <footer class="h-8 bg-gray-900 text-center pt-2">
+    <p class="text-sm text-white">{{title}}</p>
   </footer>
 </template>
 

@@ -1,32 +1,36 @@
 <template>
-  <div id="wrapper">
+  <Wrapper>
     <Header v-bind:title="title" />
-
-		<a-layout class="d-flex" style="min-height:calc(100vh - 75px)">
-      <a-layout-sider collapsible :model="collapsed1">
-        <MenuVert />
-      </a-layout-sider>
-      <a-layout>
-				<router-view></router-view>
-        <!-- <slot></slot> -->
-      </a-layout>
-    </a-layout>
-
+    <div class="flex" style="min-height:calc(100vh - 5rem)">
+      <Row align="stretch" class="w-full">
+        <Colm width="64" class="bg-gray-800">
+          <MenuVert />
+        </Colm>
+        <Colm>
+          <router-view></router-view>
+        </Colm>
+      </Row>
+    </div>
     <Footer />
-  </div>
+  </Wrapper>
 </template>
 
 <script>
+  import Wrapper from "../../components/UI/Wrapper";
   import Header from '../Header';
 	import Footer from '../Footer';
 	import MenuVert from "../../components/MenuVert";
+  import { Row, Colm } from "../../components/UI/Grid";
 
   export default {
     name: 'Layout',
     components: {
+      Wrapper,
       Header,
 			Footer,
-			MenuVert
+      MenuVert,
+      Row,
+      Colm
     },
     props: {
       title: String

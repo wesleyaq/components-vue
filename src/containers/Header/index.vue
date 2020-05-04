@@ -1,34 +1,31 @@
 <template>
-  <header class="hd py-10">
-    <Row type="flex" :gutter="30" align="middle">
-      <a-col>
-        <router-link :to="{name: 'home'}">
-          <span class="text fz-20 text-white">{{title}}</span>
-          <!--<img src="../../assets/img/logo.png" alt="Componentes" width="197" height="38">-->
-        </router-link>
-      </a-col>
-      <!-- <a-col>
-        <MenuMain :countOption="countOption" />
-      </a-col>
-      <a-col class="text-right ml-auto">
-        <MenuOptions />
-      </a-col> -->
-    </Row>
+  <header class="bg-red-600">
+    <Container type="fluid" gutter="4">
+      <Row gutter="4" align="center" class="h-12">
+        <Colm gutter="4">
+          <router-link :to="{name: 'home'}">
+            <span class="text-base text-white">{{title}}</span>
+          </router-link>
+        </Colm>
+        <Colm gutter="4" width="1/3" class="text-right">
+          <span class="text-base text-white">Opciones</span>
+        </Colm>
+      </Row>
+    </Container>
   </header>
 </template>
 
 <script>
   import config from '../../config';
-  import { Row } from 'ant-design-vue';
-  //import MenuOptions from '../../components/MenuOptions';
-  //import MenuMain from '../../components/MenuMain';
+  import Container from '../../components/UI/Container';
+  import { Row, Colm } from '../../components/UI/Grid';
 
   export default {
     name: 'Header',
     components: {
+      Container,
       Row,
-      //MenuOptions,
-      //MenuMain
+      Colm,
     },
     data() {
       return {

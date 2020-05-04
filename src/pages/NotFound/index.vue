@@ -1,8 +1,6 @@
 <template>
-  <Container type="fluid" class="pt-50">
-    <center>
-      <h1>{{title}}</h1>
-    </center>
+  <Container type="fluid" class="pt-5 text-center">
+    <h1 class="text-3xl font-bold">{{title}}</h1>
   </Container>
 </template>
 

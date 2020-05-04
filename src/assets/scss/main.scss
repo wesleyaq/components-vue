@@ -1,66 +1,4 @@
-// ===========
-// Proyecto: Andina
-// Fecha Inicio: 2020-02-26
-// Email Desarrollador: wesley.altamiranda@i2btech.com
-// ===========
-
-//- Vars
-@import "variables";
-
-//- Mixins
-// @import "inc/mixins";
-@import "components/mixins/breakpoints";
-@import "components/mixins/hover";
-// @import "components/mixins/background-variant";
-@import "components/mixins/text-emphasis";
-@import "components/mixins/text-truncate";
-@import "components/mixins/text-hide";
-// @import "components/mixins/placeholder";
-@import "components/mixins/grid";
-// @import "components/mixins/grid-framework"; //Grid Normal
-@import "components/mixins/grid-framework-flex"; //Grid FlexBox
-
-
-//- Sprite
-// @import "inc/sprite";
-// @include sprites($spritesheet-sprites);
-
-//- Components
-@import "components/normalize";
-@import "components/fonts";
-// @import "components/link";
-// @import "components/panels";
-// @import "components/cards";
-// @import "components/grid"; //Grid Normal
-@import "components/grid-flex"; //Grid FlexBox
-// @import "components/tables";
-// @import "components/tooltips";
-// @import "components/navigation";
-// @import "components/alerts";
-// @import "components/tabs";
-// @import "components/breadcrumb";
-// @import "components/collapse";
-// @import "components/dropdown";
-// @import "components/modal";
-// @import "components/forms";
-// @import "components/lazyload";
-// @import "components/quickcart";
-
-//- Helpers
-// @import "components/utilities/align";
-// @import "components/utilities/background";
-// @import "components/utilities/borders";
-// @import "components/utilities/clear";
-// @import "components/utilities/display";
-// @import "components/utilities/flex";
-// @import "components/utilities/float";
-// @import "components/utilities/images";
-// @import "components/utilities/position";
-// @import "components/utilities/sizing";
-@import "components/utilities/spacing";
-@import "components/utilities/texts";
-
-//- Global
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 html,
 body {
@@ -71,20 +9,6 @@ body {
 body {
   position: relative;
   font-family: 'Lato', Arial;
+  line-height: 1.2;
   min-height: 100vh;
 }
-
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#content {
-  flex: 1;
-}
-
-
-// * {
-//   outline: 1px solid red;
-// }
